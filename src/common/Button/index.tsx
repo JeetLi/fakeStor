@@ -1,17 +1,9 @@
-// import {
+import {} from "./style";
 
-// } from "./styles";
+interface Button {}
 
-// interface Footer {
+const Button = ({}: Button) => {
+  return;
+};
 
-// }
-
-// const Footer = ({
-
-// }: Footer) => {
-//   return (
-  
-//   );
-// };
-
-// export default Footer;
+export default Button;

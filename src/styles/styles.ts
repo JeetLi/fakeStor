@@ -9,17 +9,26 @@ export const Styles = createGlobalStyle`
     outline: 0;
   }
 
-@font-face {
-    font-family: "Raleway";
-    src: url("/fonts/Raleway.ttf") format("truetype");
-    font-style: normal;
-}
 
-body,
-html,
+@font-face {
+    // font-family: "Raleway";
+    // src: url("/fonts/Raleway.ttf") format("truetype");
+    // font-style: normal;
+}
+#root {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    min-height: 100vh;
+    width: 100%;
+  }
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
 
 a {
-    font-family: 'Raleway' 
+    // font-family: 'Raleway' 
 }
 
 body {
@@ -38,7 +47,7 @@ h1,
     h4,
     h5,
     h6 {
-        font-family: 'Raleway', serif;
+        // font-family: 'Raleway', serif;
         font-size: 56px;
         line-height: 1.18;
 
@@ -50,6 +59,15 @@ h1,
           font-size: 32px;
         }
     }
+
+    menu,
+    ol,
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
     p {
      
         font-size: 21px;        

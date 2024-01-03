@@ -1,4 +1,7 @@
 import styled from "styled-components";
 
-export const section = styled.section`
+export const StyledFooter = styled.footer`
+  background-color: #f8f9fa;
+  padding: 1rem;
+  margin-bottom: 0;
 `;
