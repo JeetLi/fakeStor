@@ -2,7 +2,7 @@ import React, { MouseEventHandler } from "react";
 import { CartContextType } from "../Context/index";
 import { Link } from "react-router-dom";
 
-interface Product {
+type Product = {
   id: number;
   title: string;
   price: number;
@@ -28,7 +28,7 @@ const Card: React.FC<CardProps> = ({ product, addToCart }) => {
 
   return (
     <article
-      className="card border border-secondary shadow-lg mx-3"
+      className="card border border-secondary shadow-lg mx-md-3"
       style={{ cursor: "pointer" }}
     >
       <Link

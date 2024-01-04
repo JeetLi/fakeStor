@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
   background-color: #f8f9fa;
-  padding: 1rem;
+  position:fixed;
+  z-index: 1;
 
   &.header {
     ul {
@@ -28,4 +29,5 @@ export const StyledHeader = styled.header`
       }
     }
   }
+
 `;

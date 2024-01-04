@@ -18,7 +18,7 @@ type CartItemType = {
   quantity: number;
 };
 
-// Определяем тип для контекста
+// 
 export type CartContextType = {
   cartItems: CartItemType[];
   addToCart: (product: ProductType) => void;
@@ -26,7 +26,7 @@ export type CartContextType = {
   changeQuantity: (productId: number, quantity: number) => void;
 };
 
-// Создаем контекст с пустым начальным значением
+// 
 export const CartContext = createContext<CartContextType>({
   cartItems: [],
   addToCart: () => {},

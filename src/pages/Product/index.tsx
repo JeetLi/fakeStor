@@ -21,7 +21,6 @@ const ProductList = () => {
   const { cartItems, addToCart, removeFromCart, changeQuantity } =
     useContext(CartContext);
   const [products, setProducts] = useState<Product[]>([]);
-  console.log(cartItems);
   useEffect(() => {
     // Fetch the products from the API
     const getProducts = async () => {
@@ -36,8 +35,8 @@ const ProductList = () => {
   }, []);
 
   return (
-    <Main className=" row  py-5">
-      <section className="container row row-cols-1 justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+    <Main className=" row px-5 sm:px-1 sm:py-8 py-5 align-item-center  mx-0">
+      <section className="container row row-cols-1 justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mx-0 ">
         {products.map((product) => (
           <Card key={product.id} product={product} addToCart={addToCart} />
         ))}
